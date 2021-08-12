@@ -9,4 +9,4 @@ RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | wget -cqi - -O wantarr.tar.tgz
 RUN ["tar", "-xvzf", "wantarr.tar.tgz"]
 RUN ["chmod", "+x", "wantarr"]
-ENTRYPOINT ["ls -a"]
+CMD ["ls -a"]
