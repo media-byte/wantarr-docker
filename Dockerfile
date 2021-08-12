@@ -9,4 +9,4 @@ RUN wget -qO - https://api.github.com/repos/media-byte/wantarr-docker/releases/l
 
 RUN ["chmod", "+x", "wantarr"]
 
-CMD ["wantarr"]
+CMD ./wantarr
