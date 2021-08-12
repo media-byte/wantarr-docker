@@ -6,7 +6,7 @@ RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | grep linux_amd64 \
       | cut -d  '"' -f 4 \
       | wget -cqi - -O wantarr.tar.tgz \
-tar -xvzf wantarr.tar.tgz
+&& tar -xvzf wantarr.tar.tgz
 
 RUN ["chmod", "+x", "wantarr"]
 
