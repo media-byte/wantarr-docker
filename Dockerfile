@@ -3,7 +3,7 @@ FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 RUN \
   echo "**** install packages ****" && \
   apt-get update && \
-  apt-get install --no-install-recommends -y wget \
+  apt-get install --no-install-recommends -y wget
   
 RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | grep browser_download_url \
