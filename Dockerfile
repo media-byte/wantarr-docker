@@ -6,5 +6,6 @@ RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | grep wantarr_linux_amd64.tar.tgz \
       | cut -d  '"' -f 4 \
       | wget -cqi -
-      
+
+RUN ["chmod", "+x", "wantarr_linux_amd64.tar.tgz"]
 ENTRYPOINT ["./wantarr_linux_amd64.tar.tgz"]
