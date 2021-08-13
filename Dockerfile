@@ -8,4 +8,4 @@ RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | wget -cqi - \
 && tar xvf wantarr_linux_amd64.tar.tgz   
 
-ENTRYPOINT ["./wantarr"]
+ENTRYPOINT ["./wantarr_linux_amd64.tar.tgz"]
