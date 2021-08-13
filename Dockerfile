@@ -1,6 +1,6 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 
-RUN apt install wget
+RUN apt-get install wget
 RUN wget -qO - https://api.github.com/repos/l3uddz/wantarr/releases/latest  \
       | grep browser_download_url \
       | grep wantarr_linux_amd64.tar.tgz \
